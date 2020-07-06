@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Grape Escape</title>
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="{% static 'vendors/bootstrap-grid.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/bootstrap-reboot.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/bootstrap.min.css' %}">
+  <script src="{% static 'vendors/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendors/bootstrap.min.js' %}"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Grape Escape</h1>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+
+</html>
