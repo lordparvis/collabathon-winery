@@ -15,11 +15,37 @@
   <script src="{% static 'vendors/bootstrap.min.js' %}"></script>
   <!-- Custom Styles -->
   <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'app.js' %}">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <div id="main">
+      <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="navbar-header">
+              <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#top">Welcome to the Grape Escape</a>
+            </div>
+            <div id="navbarCollapse" class="navbar-collapse collapse" style="height: 1px;"> <!--class="pull"-->
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#shopwines">Shop WInes</a></li>
+                <li><a href="#events">events</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div></nav>
+       </div>
+    <!-- <nav class="navbar navbar-expand-lg">
+      <a href="#" class="navbar-brand"><h1>Welcome to the Grape Escape</h1></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
           <svg class="bi bi-list" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +54,6 @@
         </span>
       </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <a href="#" class="navbar-brand"><h1>Welcome to the Grape Escape</h1></a>
       <ul class="navbar-nav ml-auto">
         <li class="nav-items"><a href="#" class="nav-link">Our Story</a></li>
         <li class="nav-items"><a href="#" class="nav-link">Shop Wines</a></li>
@@ -36,9 +61,8 @@
         <li class="nav-items"><a href="#" class="nav-link">Contacts</a></li>
       </ul>
   </div>
-  </nav>
+  </nav> -->
 </header>
-
 
   <main>
     {% block content %}
