@@ -1,10 +1,14 @@
+/* === Base === */
+body {
+  height: 100vh;
+}
+
 .header {
   background-color: #2C0E22;
   color: #ffffff;
   height: 86px;
   width: 100%;
   font-family: 'Londrina Solid', cursive;
-  font-size: 48px;
 }
 
 .search {
@@ -12,11 +16,29 @@
   height: 62px;
 }
 
-
 footer {
   height: 144px;
   width: 100%;
   background-color: #CBD3D3;
   color: #000000;
   font-family: 'Londrina Solid', cursive;
+}
+
+/* === Admin === */
+.left {
+  background-color: #EEDAD7; /* Black */ /* Disable horizontal scroll */
+  height: 315px;
+  border-bottom: 1px solid black;
+}
+
+.right {
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.subscriber {
+  background-color: #DFC7C4;
+  height: 62px;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 32px;
 }

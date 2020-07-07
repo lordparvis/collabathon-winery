@@ -11,4 +11,6 @@ def home(request):
     return render(request, 'home.html')
 
 def dashboard(request):
-    return render(request, 'admin.html')
+    subscribers = Subscriber.objects.all()
+    context = {'subscribers': subscribers}
+    return render(request, 'admin.html', context)
