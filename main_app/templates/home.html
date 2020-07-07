@@ -2,10 +2,10 @@
 
 {% block content %}
 <div class="top-image">
-<img src="../static/images/home.jpg" class="img-responsive" alt="wines" width="100%">
+<img src="../static/images/home.jpg" class="img-responsive top-image" alt="wines" width="100%">
 </div>
 <div class="container">
-<div class="organic-box">
+<div class="organic-box w-100 p-3">
 <p class="organic-text">
 <h3>ORGANICALLY FARMED AND ENVIRONMENTALLY RESPONSIBLE</h3>
 
@@ -18,19 +18,24 @@
     <h3 class="text-center">SUBSCRIBE</h3>
     <p class="text-center">Sign up for with your name and email for special offers, product news, and exclusive events.</p>
 
-      <p>By signing up, you agree to receive email communication from The Grape Escape that we find relevant to you in accordance to our privacy policy.</p>
+      <p class="text-center">By signing up, you agree to receive email communication from The Grape Escape that we find relevant to you in accordance to our privacy policy.
+      </p>
 </p>
 <!-- home name and function name same
 rem:form.as_p cant work by itself ___ subscriber_form.as_p nows working
  -->
- <div class="newsletter-form">
+
 <form action="{% url 'home' %}" method="POST">
   {% csrf_token %}
+  <div class="newsletter-form">
   {{subscriber_form.as_p}}
-  <input type="submit" value="Sign Up">
+  </div>
+  <div class="submit-btn">
+  <input type="submit" value="Sign Up" class="sign-up-btn btn btn-default">
+  </div>
 </form>
 </div>
-</div>
+
 <div class="bottom-image">
   <img src="../static/images/home-2.jpeg" class="img-responsive center-block" width="50%" alt="bottom image wines">
 </div>

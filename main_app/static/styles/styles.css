@@ -15,6 +15,11 @@ main {
   font-family: 'Londrina Solid', cursive;
 }
 /* Home page styles */
+.top-image{
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
 h3.text-center{
   font-family: Londrina Solid;
   font-style: normal;
@@ -23,8 +28,8 @@ margin-bottom:10px;
 }
 
 .organic-box{
-margin-left: 50px;
-margin-top: 70px;
+
+margin-top: 60px;
 margin-bottom: 50px;
 background: #CBD3D3;
 width: 85%;
@@ -39,6 +44,8 @@ padding-bottom: 134px;
 }
 
 .organic_text > *{
+padding-top: 35px;
+padding-bottom: 20px;
 font-family: Londrina Solid;
 font-style: normal;
 font-weight: normal;
@@ -71,14 +78,32 @@ div.subscriber-box{
   padding-right: 53px;
 }
 .newsletter-form{
+margin-top: 20px;
+margin-bottom: 20px;
 display: flex;
 flex-direction: row;
 justify-content: center;
-}
 
+}
+.sign-up-btn{
+background: #EEDAD7;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 6px;
+text-align: center;
+margin-top: 15px;
+margin-bottom: 10px;
+align-items: center;
+}
+.submit-btn{
+display: flex;
+justify-content: center;
+}
 .bottom-image{
 display: flex;
 justify-content: center;
+width: auto ;
+  max-width: 100% ;
+  height: auto ;
 }
 
 /* === nav === */
@@ -208,6 +233,7 @@ footer {
 }
 
 
+
 /* === Admin === */
 .left {
   background-color: #EEDAD7; /* Black */ /* Disable horizontal scroll */
@@ -226,6 +252,20 @@ footer {
   font-family: 'Londrina Solid', cursive;
   font-size: 32px;
 }
+div.organic-box{
+  overflow: hidden;
+  width:100%;
+}
+/* Home */
+div.newsletter-form{
+display: flex;
+flex-direction: column;
+max-width: 100%;
+justify-content: center;
+align-items: center;
+}
+
+
 }
 
 @media only screen and (max-width: 320px){
