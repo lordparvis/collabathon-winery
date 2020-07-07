@@ -14,6 +14,72 @@ main {
   width: 100%;
   font-family: 'Londrina Solid', cursive;
 }
+/* Home page styles */
+h3.text-center{
+  font-family: Londrina Solid;
+  font-style: normal;
+margin-top: 10px;
+margin-bottom:10px;
+}
+
+.organic-box{
+margin-left: 50px;
+margin-top: 70px;
+margin-bottom: 50px;
+background: #CBD3D3;
+width: 85%;
+height: 400px;
+left: 45px;
+top: 947px;
+text-align: center;
+padding-left: 83px;
+padding-right: 82px;
+padding-top: 141px;
+padding-bottom: 134px;
+}
+
+.organic_text > *{
+font-family: Londrina Solid;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 57px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 1px;
+color: #000000;
+}
+div.subscriber-box{
+  background-color: #2C0E22;
+  color: #ffffff;
+  }
+.subscriber-text{
+  font-family: Londrina Solid;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 3px;
+
+  color: #FFFFFF;
+  padding-bottom: 121px;
+  padding-left: 54px;
+  padding-right: 53px;
+}
+.newsletter-form{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.bottom-image{
+display: flex;
+justify-content: center;
+}
 
 /* === nav === */
 button.nav-icon {
@@ -140,71 +206,7 @@ footer {
   color: #000000;
   font-family: 'Londrina Solid', cursive;
 }
-h3.text-center{
-  font-family: Londrina Solid;
-  font-style: normal;
-margin-top: 10px;
-margin-bottom:10px;
-}
 
-.organic-box{
-margin-left: 50px;
-margin-top: 70px;
-margin-bottom: 50px;
-background: #CBD3D3;
-width: 85%;
-height: 400px;
-left: 45px;
-top: 947px;
-text-align: center;
-padding-left: 83px;
-padding-right: 82px;
-padding-top: 141px;
-padding-bottom: 134px;
-}
-
-.organic_text > *{
-font-family: Londrina Solid;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 57px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 1px;
-color: #000000;
-}
-div.subscriber-box{
-  background-color: #2C0E22;
-  color: #ffffff;
-  }
-.subscriber-text{
-  font-family: Londrina Solid;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 34px;
-  line-height: 40px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 3px;
-
-  color: #FFFFFF;
-  padding-bottom: 121px;
-  padding-left: 54px;
-  padding-right: 53px;
-}
-.newsletter-form{
-display: flex;
-flex-direction: row;
-justify-content: center;
-}
-
-.bottom-image{
-display: flex;
-justify-content: center;
-}
 
 /* === Admin === */
 .left {
