@@ -1,10 +1,129 @@
+/* === Base === */
+body {
+  height: 100%;
+}
+
+main {
+ height: 100%;
+}
+
 .header {
   background-color: #2C0E22;
   color: #ffffff;
   height: 86px;
   width: 100%;
   font-family: 'Londrina Solid', cursive;
-  font-size: 48px;
+}
+
+/* === nav === */
+button.nav-icon {
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #2C0E22;
+}
+
+.navbar-dark.navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+h2 {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+div.mobile{
+  display: none;
+}
+
+.navbar-nav {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+div.links {
+  background-color: #ffffff;
+}
+
+span.icon {
+  color: #ffffff;
+}
+
+
+/* === footer === */
+footer {
+  height: 144px;
+  width: 100%;
+  background-color: #CBD3D3;
+  color: #000000;
+  font-family: 'Londrina Solid', cursive;
+}
+
+/* === Admin === */
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  height: 62px;
+  background: #CBD3D3;
+}
+
+.main-row {
+  background-color: #DFC7C4;
+  font-family: 'Londrina Solid', cursive;
+}
+
+.right {
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.subscriber {
+  background-color: #DFC7C4;
+  height: 62px;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 32px;
+}
+
+.row {
+  border-bottom: 1px solid black;
+}
+
+.search-container {
+  background-color: #CBD3D3;
+}
+
+@media only screen and (max-width: 500px){
+/* === Base === */
+body {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2C0E22;
+  color: #ffffff;
+  height: 86px;
+  width: 100%;
+  font-family: 'Londrina Solid', cursive;
+}
+
+div.desktop {
+  display: none;
+}
+
+div.mobile {
+  display: block;
 }
 
 .search {
@@ -12,8 +131,9 @@
   height: 62px;
 }
 
-
 footer {
+
+  bottom: 0;
   height: 144px;
   width: 100%;
   background-color: #CBD3D3;
@@ -84,4 +204,30 @@ justify-content: center;
 .bottom-image{
 display: flex;
 justify-content: center;
+}
+
+/* === Admin === */
+.left {
+  background-color: #EEDAD7; /* Black */ /* Disable horizontal scroll */
+  height: 315px;
+  border-bottom: 1px solid black;
+}
+
+.right {
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.subscriber {
+  background-color: #DFC7C4;
+  height: 62px;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 32px;
+}
+}
+
+@media only screen and (max-width: 320px){
+  path {
+    visibility: hidden;
+  }
 }

@@ -11,7 +11,9 @@ def home(request):
     return render(request, 'home.html')
 
 def dashboard(request):
-    return render(request, 'admin.html')
+    subscribers = Subscriber.objects.all()
+    context = {'subscribers': subscribers}
+    return render(request, 'admin.html', context)
 
 
 
@@ -25,3 +27,4 @@ def subscriber_index(request):
     subscriber_form=Subscriber_Form()
   context = {'subscriber_form': subscriber_form}
   return render(request, 'home.html',context)
+
