@@ -16,8 +16,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
       By signing up, you agree to receive email communication from The Grape Escape that we find relevant to you in accordance to our privacy policy.</p>
 
-<!-- FIRST NAME -->
-<form action="" method="POST">
+<!-- home name and function name same
+rem:form.as_p cant work by itself ___ subscriber_form.as_p nows working
+ -->
+<form action="{% url 'home' %}" method="POST">
   {% csrf_token %}
   {{subscriber_form.as_p}}
   <input type="submit" value="Sign Up">
