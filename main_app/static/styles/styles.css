@@ -7,8 +7,14 @@
   font-size: 48px;
 }
 
+.search {
+  background-color: #CBD3D3;
+  height: 62px;
+}
+
+
 footer {
-  height: 414px;
+  height: 144px;
   width: 100%;
   background-color: #CBD3D3;
   color: #000000;

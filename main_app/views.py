@@ -11,4 +11,4 @@ def home(request):
     return render(request, 'home.html')
 
 def dashboard(request):
-    return HttpResponse('<h1>Dashboard</h1>')
+    return render(request, 'admin.html')
