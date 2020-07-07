@@ -7,6 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Grape Escape</title>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="{% static 'vendors/bootstrap-grid.min.css' %}">
   <link rel="stylesheet" href="{% static 'vendors/bootstrap-reboot.min.css' %}">
@@ -15,29 +16,12 @@
   <script src="{% static 'vendors/bootstrap.min.js' %}"></script>
   <!-- Custom Styles -->
   <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
-  <link rel="stylesheet" href="{% static 'app.js' %}">
+  <link rel="stylesheet" href="{% static 'scripts/app.js' %}">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <a href="#" class="navbar-brand"><h1>Welcome to the Grape Escape</h1></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-          <svg class="bi bi-list" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-        </span>
-      </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-items"><a href="#" class="nav-link">Our Story</a></li>
-        <li class="nav-items"><a href="#" class="nav-link">Shop Wines</a></li>
-        <li class="nav-items"><a href="#" class="nav-link">Events</a></li>
-        <li class="nav-items"><a href="#" class="nav-link">Contacts</a></li>
-      </ul>
-  </div>
-  </nav>
+ <header class="header d-flex justify-content-center align-items-center">
+     <h1>The Grape Escape</h1>
 </header>
 
   <main>
@@ -46,4 +30,9 @@
   </main>
 
 </body>
+<footer class="d-flex flex-column justify-content-center align-items-center">
+    <p class=" text-center ">1 California Dr, Yountville, CA 94599 <br> 888) 242-6366 | open daily 11 am to 6 pm</p>
+    <h6>© 2020 The Grape Escape</h6>
+
+</footer>
 </html>
