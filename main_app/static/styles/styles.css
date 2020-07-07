@@ -20,3 +20,10 @@ footer {
   color: #000000;
   font-family: 'Londrina Solid', cursive;
 }
+
+div.organic-box{
+
+width: 551px;
+height: 256px;
+background: #CBD3D3;
+}

@@ -1,7 +1,29 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
+<div class="top-image">
+<img src="../static/images/home.jpg" alt="wines" width="100%">
+</div>
+<div class="organic-box justify-content-center">
+<h3>ORGANICALLY FARMED AND ENVIRONMENTALLY RESPONSIBLE</h3>
 
-<p>The stuff</p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</div>
+<div class="subscriber">
+
+    <h3>SUBSCRIBE</h3>
+    <p>Sign up for with your name and email for special offers, product news, and exclusive events.
+
+      By signing up, you agree to receive email communication from The Grape Escape that we find relevant to you in accordance to our privacy policy.</p>
+
+<!-- FIRST NAME -->
+<form action="" method="POST">
+  {% csrf_token %}
+  {{subscriber_form.as_p}}
+  <input type="submit" value="Sign Up">
+</form>
+</div>
+<div>
+  <img src="../static/images/home-2.jpeg" alt="bottom image wines">
+</div>
 {% endblock %}
