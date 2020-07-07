@@ -2,30 +2,37 @@
 
 {% block content %}
 <div class="top-image">
-<img src="../static/images/home.jpg" alt="wines" width="100%">
+<img src="../static/images/home.jpg" class="img-responsive" alt="wines" width="100%">
 </div>
-<div class="organic-box justify-content-center">
+<div class="container">
+<div class="organic-box">
+<p class="organic-text">
 <h3>ORGANICALLY FARMED AND ENVIRONMENTALLY RESPONSIBLE</h3>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</p>
+</p>
 </div>
-<div class="subscriber">
+<div class="subscriber-box">
+    <p class="subscriber-text">
+    <h3 class="text-center">SUBSCRIBE</h3>
+    <p class="text-center">Sign up for with your name and email for special offers, product news, and exclusive events.</p>
 
-    <h3>SUBSCRIBE</h3>
-    <p>Sign up for with your name and email for special offers, product news, and exclusive events.
-
-      By signing up, you agree to receive email communication from The Grape Escape that we find relevant to you in accordance to our privacy policy.</p>
-
+      <p>By signing up, you agree to receive email communication from The Grape Escape that we find relevant to you in accordance to our privacy policy.</p>
+</p>
 <!-- home name and function name same
 rem:form.as_p cant work by itself ___ subscriber_form.as_p nows working
  -->
-<form action="{% url 'home' %}" method="POST">
+ <div class="newsletter-form">
+<form action="{% url 'home' %}" method="POST" class="d-inline-block">
   {% csrf_token %}
   {{subscriber_form.as_p}}
   <input type="submit" value="Sign Up">
 </form>
 </div>
-<div>
-  <img src="../static/images/home-2.jpeg" alt="bottom image wines">
+</div>
+<div class="bottom-image">
+  <img src="../static/images/home-2.jpeg" class="img-responsive center-block" width="50%" alt="bottom image wines">
+</div>
 </div>
 {% endblock %}
